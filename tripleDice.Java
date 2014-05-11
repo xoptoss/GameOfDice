@@ -15,3 +15,7 @@ public class tripleDice extends dice {
 		System.out.println("You Rolled :"+value);
 	}	
 }
+
+
+// YOu will need to call
+// the Throw method will need to call the base Dice.Throw with proper parameter to represents the 3 dices.
