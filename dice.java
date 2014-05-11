@@ -10,12 +10,8 @@ public class dice {
 		value = Value;
 	}
 	public void Throw() {		
-		Random random = new Random();
-		for(int i=3;i>0;i--)
-		{
-			value = value+random.nextInt(6)+1;  
-		}
-		value=value/3;
+		Random random = new Random();		
+			value = random.nextInt(6)+1;  		
 		System.out.println("You Rolled :"+value);
 	}
 }
