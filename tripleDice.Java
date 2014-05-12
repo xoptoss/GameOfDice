@@ -5,10 +5,13 @@ public class tripleDice extends dice
 	{
 		super(Bounces,Value);
 	}
-	public void Throw() 
+	public int Throw() 
 	{
-		super.Throw();
-		super.Throw();
-		super.Throw();
+		for(int x = 3; x>0 ;x--)
+		{		
+			value = value+super.Throw();			
+		}
+		value = value/3;
+		return value;
 	}	
 }
